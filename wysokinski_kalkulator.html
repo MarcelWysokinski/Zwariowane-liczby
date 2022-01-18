@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>
+        Kalkulator
+    </title>
+    <script language="JavaScript">
+   
+   function dodawanie (){
+       const zmienna1=parseFloat(liczba1.value);
+       const zmienna2=parseFloat(liczba2.value);
+   wynik.innerHTML=zmienna1+zmienna2;
+   }
+   function dzielenie(a,b,iloraz){
+       const zmienna1=parseFloat(liczba1.value);
+       const zmienna2=parseFloat(liczba2.value);
+   wynik.innerHTML=zmienna1/zmienna2;
+    }
+    function mnozenie (a,b,iloczyn){
+
+       const zmienna1=parseFloat(liczba1.value);
+       const zmienna2=parseFloat(liczba2.value);
+   wynik.innerHTML=zmienna1*zmienna2;
+    }
+    function odejmowanie (a,b,roznica){
+
+       const zmienna1=parseFloat(liczba1.value);
+       const zmienna2=parseFloat(liczba2.value);
+   wynik.innerHTML=zmienna1-zmienna2;
+    }
+
+    function potegowanie(a,b,potega){
+
+       const zmienna1=parseFloat(liczba1.value);
+       const zmienna2=parseFloat(liczba2.value);
+   wynik.innerHTML=zmienna1**zmienna2;   
+    }
+    </script>
+  </head>
+  <body>
+      <p>Marcel Wysokiński</p>
+    
+        <input  id="liczba1" placeholder="a" />
+        <input  id="liczba2" placeholder="b" /><br>
+   
+    <input type="button" value="dodawanie" onclick="dodawanie()"><br>
+    <input type="button" value="odejmowanie" onclick="odejmowanie()"><br>
+    <input type="button" value="mnozenie" onclick="mnozenie()"><br>
+    <input type="button" value="dzielenie" onclick="dzielenie()"><br>
+    <input type="button" value="potegowanie" onclick="potegowanie()"><br>
+
+    <p id="wynik"></p>
+        
+
+  </body>
+</html>
