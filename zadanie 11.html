@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+    div{
+    border: 4px solid black;
+    width:320px;
+    }
+    h2{
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+<div>
+<h1>Silnia</h1>
+Podaj liczbe: <input id="liczba" type="number"><br>
+
+<input type="button" value="Oblicz" onclick="oblicz()">
+<p id="wynik"></p>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+
+ const oblicz =()=>
+ {
+    let silnia=1;
+ let n = parseInt(liczba.value);
+
+ for(let i=1;i<=n;i++)
+ {
+  silnia*=i;
+  wynik.innerHTML="Silnia wynosi " + silnia;
+ }
+ }
+</script>
