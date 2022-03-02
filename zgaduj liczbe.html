@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+    div{
+    border: 4px solid black;
+    width:420px;
+    }
+    h2{
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+<div>
+<h1>Zgadnij liczbę</h1>
+<input type="button" value="Zgaduj" onclick="oblicz()">
+<p id="wynik"></p>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+
+const los=Math.floor(Math.random()*100)+1;
+let licznik = 0;
+let liczba;
+ const oblicz =()=>
+ {
+   do
+   {
+     liczba=parseInt(prompt("Podaj liczbe"));
+     licznik++;
+     if(liczba<los){
+alert("Niestety, liczba jest za mała")
+     }
+     else if(liczba>los){
+alert("Niestety, liczba jest za duza")
+     }
+     else if(liczba==los){
+alert("Gratulacje udało ci się oto ilosc twoich prob: " + licznik)
+     }
+
+   }
+   while(liczba!=los)
+   {
+
+   }
+ }
+</script>
